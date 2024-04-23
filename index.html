@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Página web</h1>
+    <h2>No sé</h2>
+    <div id="suma"></div>
+    <div id="resta"></div>
+    <div id="multiplicacion"></div>
+    <div id="division"></div>
+    <script>
+        function sumar (valor1, valor2){
+            var suma = valor1 + valor2;
+            document.getElementById('suma').innerHTML="resultado de suma: " + suma;
+        }
+        sumar(50,60);
+
+        function restar (valor3, valor4){
+            var resta = valor3 - valor4;
+            document.getElementById('resta').innerHTML="resultado de resta: " + resta;
+        }
+        restar(30,60);
+
+        function multiplicar (valor5, valor6){
+            var multiplicacion = valor5 * valor6;
+            document.getElementById('multiplicacion').innerHTML="resultado de multiplicación: "+ multiplicacion;
+        }
+        multiplicar(5,2);
+
+        function dividir (x, y){
+            var division = x / y;
+            document.getElementById('division').innerHTML="resultado de division: "+ division;
+        }
+        dividir(10,10);
+    </script>
+</body>
+</html>

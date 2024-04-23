@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>La operación 1 es una suma</p>
+    <div id="suma"></div>
+    <button onclick="javascript:sumar(50,60);">Sumar</button>
+    <p>La operación 2 es una resta</p>
+    <div id="resta"></div>
+    <button onclick="javascript:restar(30,60);">Restar</button>
+    <p>La operación 3 es una multiplicación</p>
+    <div id="multiplicacion"></div>
+    <button onclick="javascript:multiplicar(5,2);">multiplicar</button>
+    <p>La operación 4 es una división</p>
+    <div id="division"></div>
+    <button onclick="javascript:dividir(10,10);">Dividir</button>
+    <script>
+        function sumar (valor1, valor2){
+            var suma = valor1 + valor2;
+            document.getElementById('suma').innerHTML="resultado de suma: " + suma;
+        }
+
+        function restar (valor3, valor4){
+            var resta = valor3 - valor4;
+            document.getElementById('resta').innerHTML="resultado de resta: " + resta;
+        }
+
+        function multiplicar (valor5, valor6){
+            var multiplicacion = valor5 * valor6;
+            document.getElementById('multiplicacion').innerHTML="resultado de multiplicación: "+ multiplicacion;
+        }
+
+        function dividir (x, y){
+            var division = x / y;
+            document.getElementById('division').innerHTML="resultado de division: "+ division;
+        }
+    </script>
+</body>
+</html>
